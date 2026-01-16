@@ -5,7 +5,7 @@ function RecordGrid({ records }) {
   return (
     <div className="record-grid">
       {records.map((record) => (
-        <RecordCard key={record.id} record={record} />
+        <RecordCard key={record.id} artwork={record.artwork} />
       ))}
     </div>
   )

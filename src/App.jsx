@@ -3,18 +3,12 @@ import Header from "./layout/Header";
 import NowPlaying from "./layout/NowPlaying";
 import RecordGrid from "./display/RecordGrid";
 import Navigation from "./controls/Navigation";
-
-const mockRecords = Array.from({ length: 8 }, (_, i) => ({
-  id: `record-${i}`,
-  title: `Record ${i + 1}`,
-  artist: `Artist ${i + 1}`,
-  coverImage: null,
-  isPlaying: false,
-}));
+import { getRecordList } from "./api";
 
 function App() {
-  const [records, setRecords] = useState(mockRecords);
+  const [records, setRecords] = useState(getRecordList());
 
+  console.log(records);
   const handlePrevious = () => {
     console.log("Previous");
   };
@@ -30,7 +24,7 @@ function App() {
         {/* <Navigation onPrevious={handlePrevious} onNext={handleNext} />*/}
         <RecordGrid records={records} />
       </main>
-      <NowPlaying currentRecord={null} />
+      {/* <NowPlaying currentRecord={null} />*/}
     </div>
   );
 }
