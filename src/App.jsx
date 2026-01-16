@@ -27,7 +27,7 @@ function App() {
     <div className="app">
       <Header />
       <main className="main-content">
-        <Navigation onPrevious={handlePrevious} onNext={handleNext} />
+        {/* <Navigation onPrevious={handlePrevious} onNext={handleNext} />*/}
         <RecordGrid records={records} />
       </main>
       <NowPlaying currentRecord={null} />
