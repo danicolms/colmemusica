@@ -5,7 +5,7 @@
     --color-tertiary: #7b68ee;
 
     /* Updated Colors */
-    --color-bg: #7b68ee;
+    --color-bg: #fafafa;
     --color-container: #fafafa;
     --color-text-primary: #2d2d2d;
     --color-text-secondary: #666666;
@@ -49,7 +49,6 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: var(--spacing-lg);
-    gap: var(--spacing-xl);
 }
 
 .header {
@@ -59,7 +58,7 @@ body {
 }
 
 .logo {
-    width: 400px;
+    width: 500px;
     height: auto;
     transition:
         transform 0.3s ease,
@@ -74,26 +73,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
     padding: var(--spacing-lg);
     position: relative;
     width: 100%;
     max-width: 900px;
     border-radius: var(--radius-sm);
-}
-
-.main-content::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(255, 107, 157, 0.2) 0%,
-        rgba(254, 202, 87, 0.3) 50%,
-        rgba(123, 104, 238, 0.2) 100%
-    );
-    border-radius: var(--radius-lg);
-    pointer-events: none;
 }
 
 .navigation {

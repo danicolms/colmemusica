@@ -1,5 +1,4 @@
-import React from 'react'
-import RecordCard from './RecordCard'
+import RecordCard from "./Card";
 
 function RecordGrid({ records }) {
   return (
@@ -8,7 +7,7 @@ function RecordGrid({ records }) {
         <RecordCard key={record.id} artwork={record.artwork} />
       ))}
     </div>
-  )
+  );
 }
 
-export default RecordGrid
+export default RecordGrid;
