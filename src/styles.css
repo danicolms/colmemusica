@@ -31,25 +31,25 @@ body {
 .logo {
     position: fixed;
     bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 10%;
+    transform: translateX(50%);
     z-index: 1000;
     width: 140px;
     height: auto;
     cursor: pointer;
-    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
 .logo-backdrop {
     position: fixed;
     bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
+    right: 10%;
+    transform: translateX(50%);
+    width: 190px;
     height: 60px;
-    background: rgba(26, 26, 26, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
     z-index: 999;
+    border-radius: 8px;
 }
 
 .grid-container {
@@ -75,9 +75,9 @@ body {
     width: var(--grid-item-size);
     height: var(--grid-item-size);
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.1s ease-out;
-    padding: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .grid-item:hover {
