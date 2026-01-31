@@ -2,7 +2,7 @@ import { useState } from "react";
 import Grid from "./Grid";
 import recordsDb from "./records.db.json";
 import { Record } from "./records";
-import logo from "/logo.png";
+import logo from "/logo.jpeg";
 
 function App() {
   const [records] = useState<Record[]>(recordsDb);
@@ -46,14 +46,10 @@ function App() {
 
   return (
     <>
-      <div className="logo-backdrop" />
-      <img
-        src={logo}
-        alt="còlmemusica"
-        className="logo"
-        style={{ width: "160px" }}
-      />
-      <Grid gridSize={400} renderItem={renderItem} className="grid-container" />
+      <a href="https://danicolms.xyz" target="_blank">
+        <img src={logo} alt="danicolms Logo" className="logo" />
+      </a>
+      <Grid gridSize={300} renderItem={renderItem} className="grid-container" />
     </>
   );
 }

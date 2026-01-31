@@ -34,5 +34,19 @@
     "releaseYear": 2021,
     "services": [],
     "artwork": "/colmemusica/artworks/building-blocks.jpeg"
+  },
+  {
+    "id": "dk:821470362180",
+    "name": "Disfuncional",
+    "releaseYear": 2017,
+    "services": [],
+    "artwork": "/colmemusica/artworks/disfuncional.png"
+  },
+  {
+    "id": "dk:821470126270",
+    "name": "Mambrú",
+    "releaseYear": 2016,
+    "services": [],
+    "artwork": "/colmemusica/artworks/mambru.png"
   }
 ]
