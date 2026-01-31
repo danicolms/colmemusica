@@ -25,7 +25,7 @@
         "url": "https://music.youtube.com/playlist?list=OLAK5uy_lU0agGcAr5ybF7Ts8AYlNdB8RolURBcKc&si=q67XZvCurx8G2VQq"
       }
     ],
-    "artwork": "/colmemusica/artworks/vuelve-a-la-vida.jpg"
+    "artwork": "/artworks/vuelve-a-la-vida.jpg"
   },
   {
     "id": "dk:199940561396",
@@ -53,7 +53,7 @@
         "url": "https://music.youtube.com/playlist?list=OLAK5uy_kTHE3_0owOWCrYByXO-LiA0xZu_MeD9g8&si=esD-1voMJzbpdNN7"
       }
     ],
-    "artwork": "/colmemusica/artworks/wonderland.jpg"
+    "artwork": "/artworks/wonderland.jpg"
   },
   {
     "id": "dk:199940784122",
@@ -81,7 +81,7 @@
         "url": "https://music.youtube.com/playlist?list=OLAK5uy_npdMw1gClqV34LVmWqn5KRD1h7GVhphas&si=alclEWR1cM024cck"
       }
     ],
-    "artwork": "/colmemusica/artworks/erase-una-vez.jpg"
+    "artwork": "/artworks/erase-una-vez.jpg"
   },
   {
     "id": "dk:199949069060",
@@ -109,7 +109,7 @@
         "url": "https://music.youtube.com/playlist?list=OLAK5uy_lrwIiryWl8WcHebvV0Wbqb4gQ-tN8-6zU&si=ZPd2SSO0UkNQINzs"
       }
     ],
-    "artwork": "/colmemusica/artworks/basado-en-una-historia-ficticia.jpg"
+    "artwork": "/artworks/basado-en-una-historia-ficticia.jpg"
   },
 
   {
@@ -122,20 +122,20 @@
         "url": "https://open.spotify.com/album/47ik95atDsFzQjpS5V0pFZ?si=m7YX5HfjTb-t7fwJo1wniA"
       }
     ],
-    "artwork": "/colmemusica/artworks/building-blocks.jpeg"
+    "artwork": "/artworks/building-blocks.jpeg"
   },
   {
     "id": "dk:821470362180",
     "name": "Disfuncional",
     "releaseYear": 2017,
     "services": [],
-    "artwork": "/colmemusica/artworks/disfuncional.jpg"
+    "artwork": "/artworks/disfuncional.jpg"
   },
   {
     "id": "dk:821470126270",
     "name": "Mambrú",
     "releaseYear": 2016,
     "services": [],
-    "artwork": "/colmemusica/artworks/mambru.jpg"
+    "artwork": "/artworks/mambru.jpg"
   }
 ]
