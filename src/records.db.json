@@ -3,29 +3,113 @@
     "id": "dk:199084844973",
     "name": "VUELVE A LA VIDA",
     "releaseYear": 2025,
-    "services": [],
-    "artwork": "/colmemusica/artworks/vuelve-a-la-vida.jpg"
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/4uROTzFkcN4WCoDL19rNWD?si=3tpBwv95T2Kz0_ThxT-aoA"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/vuelve-a-la-vida-ep/1795213242"
+      },
+      {
+        "name": "Deezer",
+        "url": "https://link.deezer.com/s/32jVYowWNdEXuRK6RIgDG"
+      },
+      {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.com/albums/B0DW4J4Z9T?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_4Yajrg9xh6pHmJEYimDeF6GAv"
+      },
+      {
+        "name": "YouTube Music",
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_lU0agGcAr5ybF7Ts8AYlNdB8RolURBcKc&si=q67XZvCurx8G2VQq"
+      }
+    ],
+    "artwork": "/colmemusica/artworks/vuelve-a-la-vida.png"
   },
   {
     "id": "dk:199940561396",
     "name": "Wonderland",
     "releaseYear": 2022,
-    "services": [],
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/3mFYbnPkIarIWZ7Z7OSxg8?si=lZZBLSrXSvCr9dfL2c8EMQ"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/wonderland-ep/1863303448"
+      },
+      {
+        "name": "Deezer",
+        "url": "https://link.deezer.com/s/32jWaeS6E3KFYlCnOEXKV"
+      },
+      {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.com/albums/B0GBP2HMYC?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_XNcUEQu6PtirSJIhGuS6AzeQN"
+      },
+      {
+        "name": "YouTube Music",
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_kTHE3_0owOWCrYByXO-LiA0xZu_MeD9g8&si=esD-1voMJzbpdNN7"
+      }
+    ],
     "artwork": "/colmemusica/artworks/wonderland.jpg"
   },
   {
     "id": "dk:199940784122",
     "name": "Érase una vez",
     "releaseYear": 2021,
-    "services": [],
-    "artwork": "/colmemusica/artworks/erase-una-vez.jpg"
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/48uMF3rRO7k54VP7KmbBht?si=Anp0ZWFBTRmOjFgewBwj6A"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/%C3%A9rase-una-vez-ep/1863457107"
+      },
+      {
+        "name": "Deezer",
+        "url": "https://link.deezer.com/s/32jWcArAQl4tKY2EGRvpy"
+      },
+      {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.com/albums/B0GBV3182M?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_pNKvs11sIJBCy4JmZCdVOfDaB"
+      },
+      {
+        "name": "YouTube Music",
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_npdMw1gClqV34LVmWqn5KRD1h7GVhphas&si=alclEWR1cM024cck"
+      }
+    ],
+    "artwork": "/colmemusica/artworks/erase-una-vez.png"
   },
   {
     "id": "dk:199949069060",
     "name": "Basado en una historia ficticia",
     "releaseYear": 2020,
-    "services": [],
-    "artwork": "/colmemusica/artworks/basado-en-una-historia-ficticia.jpg"
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/3NxIvuBR14jkK9gpF3AQoX?si=TCRjkGBAQs6jI4pGQbV2rg"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/basado-en-una-historia-ficticia-ep/1856815132"
+      },
+      {
+        "name": "Deezer",
+        "url": "https://link.deezer.com/s/32jWplitHumxIHzkCeOTy"
+      },
+      {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.com/albums/B0G4B4R7NL?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_xAGCG1B7tlC4btbE4H4CrZSVV"
+      },
+      {
+        "name": "YouTube Music",
+        "url": "https://music.youtube.com/playlist?list=OLAK5uy_lrwIiryWl8WcHebvV0Wbqb4gQ-tN8-6zU&si=ZPd2SSO0UkNQINzs"
+      }
+    ],
+    "artwork": "/colmemusica/artworks/basado-en-una-historia-ficticia.png"
   },
 
   {

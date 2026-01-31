@@ -84,22 +84,68 @@ body {
     cursor: auto;
 }
 
-.grid-item:hover {
-    filter: brightness(0.2);
-}
-
-.grid-item img:not(.service-icon) {
+.grid-item img.artwork {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.services-container {
-    position: relative;
+.services-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    pointer-events: auto;
+}
+
+.grid-item:hover .services-backdrop {
+    opacity: 1;
+}
+
+.services-container {
+    display: flex;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.services-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     backdrop-filter: blur(10px);
     pointer-events: auto;
-    top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 6px;
+    gap: 8px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 240px;
+}
+
+.service-link {
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.2s ease;
+}
+
+.service-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+.service-link:hover .service-icon {
+    transform: scale(1.1);
 }
 
 .service-link {

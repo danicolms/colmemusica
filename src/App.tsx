@@ -16,20 +16,31 @@ function App() {
 
   const getServiceIcon = (serviceName: string) => {
     switch (serviceName) {
-      case "Spotify": return spotifyLogo;
-      case "YouTube Music": return youtubeLogo;
-      case "Apple Music": return appleLogo;
-      case "Deezer": return deezerLogo;
-      case "Amazon Music": return amazonLogo;
-      default: return null;
+      case "Spotify":
+        return spotifyLogo;
+      case "YouTube Music":
+        return youtubeLogo;
+      case "Apple Music":
+        return appleLogo;
+      case "Deezer":
+        return deezerLogo;
+      case "Amazon Music":
+        return amazonLogo;
+      default:
+        return null;
     }
   };
 
   const renderServiceIcons = (record: Record) => {
-    if (!record.services || record.services.length === 0) return null;
+    if (!record.services || record.services.length === 0)
+      return (
+        <div className="services-backdrop">
+          <p> Coming soon</p>
+        </div>
+      );
 
     return (
-      <div className="services-overlay">
+      <div className="services-backdrop">
         <div className="services-container">
           {record.services.map((service, index) => {
             const icon = getServiceIcon(service.name);
@@ -43,11 +54,7 @@ function App() {
                 rel="noopener noreferrer"
                 className="service-link"
               >
-                <img
-                  src={icon}
-                  alt={service.name}
-                  className="service-icon"
-                />
+                <img src={icon} alt={service.name} className="service-icon" />
               </a>
             );
           })}
@@ -69,7 +76,7 @@ function App() {
     return (
       <div className="grid-item-wrapper">
         <div className="grid-item">
-          <img src={record.artwork} alt={record.name} />
+          <img className="artwork" src={record.artwork} alt={record.name} />
           {renderServiceIcons(record)}
         </div>
       </div>
