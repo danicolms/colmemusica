@@ -32,7 +32,12 @@
     "id": "amuse:unknown:0",
     "name": "Building Blocks",
     "releaseYear": 2021,
-    "services": [],
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/47ik95atDsFzQjpS5V0pFZ?si=m7YX5HfjTb-t7fwJo1wniA"
+      }
+    ],
     "artwork": "/colmemusica/artworks/building-blocks.jpeg"
   },
   {

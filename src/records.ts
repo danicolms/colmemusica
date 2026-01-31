@@ -6,9 +6,7 @@ export interface Record {
   artwork: string;
 }
 
-type AllowedServices = "Spotify" | "Apple Music" | "YouTube Music";
-
 export interface Service {
-  name: AllowedServices;
+  name: string;
   url: string;
 }
