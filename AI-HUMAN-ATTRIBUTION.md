@@ -2,7 +2,7 @@
 
 **Project**: còlmemusica - Music Record Display
 **Started**: 2025-01-14
-**Last Updated**: 2025-01-15
+**Last Updated**: 2026-01-31
 
 ---
 
@@ -39,7 +39,7 @@
 
 ## Project Contributions
 
-**Last Updated**: 2025-01-15
+**Last Updated**: 2026-01-31
 
 ### Overall Project Attribution
 
@@ -48,24 +48,24 @@
 │                  CONTRIBUTION BREAKDOWN                     │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  Human: ████████████████████████████████████░░░░░░░░░░ 70% │
-│  AI:    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█████████ 30%  │
+│  Human: ████████████████████████░░░░░░░░░░░░░░░░░░░ 55% │
+│  AI:    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█████████ 45%  │
 │                                                             │
 ├─────────────────────────────────────────────────────────────┤
 │  Phase              │  Human       │  AI                    │
 ├─────────────────────────────────────────────────────────────┤
 │  Conceptualization  │  Principal   │  Support               │
-│  Analysis           │  Principal   │  Equal                 │
+│  Analysis           │  Equal       │  Equal                 │
 │  Implementation     │  Support     │  Principal             │
 │  Validation         │  Principal   │  Support               │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 **Summary**:
-- **Total Features**: 1
-- **Human-Dominated Features**: 0
-- **AI-Dominated Features**: 0
-- **Balanced Features**: 1
+- **Total Features**: 6
+- **Human-Dominated Features**: 2
+- **AI-Dominated Features**: 2
+- **Balanced Features**: 2
 
 ---
 
@@ -147,32 +147,244 @@
 
 ---
 
+### 2026-01-18: Boilerplate Refactor & Cleanup
+
+**Phase**: Implementation, Validation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal - Decided to remove unused components, simplify architecture | Support |
+| Analysis           | Principal | Support - Analyzed dependencies and component relationships |
+| Implementation     | Principal - Refactored directories, removed Navigation/NowPlaying/Header components, updated asset paths | Support - Provided code cleanup suggestions |
+| Validation         | Principal - Verified simplified structure still works | Support |
+
+**Deliverables**:
+- ✅ Removed redundant components (Navigation, NowPlaying, Header)
+- ✅ Restructured directories (display/ → Record/ domain)
+- ✅ Simplified data structure
+- ✅ Updated asset references (logo.png, frame.png)
+- ✅ Removed 60+ lines of unused code
+- ✅ Consolidated API calls
+
+**Tools Used**: Git refactor, ESLint
+**Human Time**: ~30 minutes (architectural decisions, manual refactoring, validation)
+**AI Time**: ~10 minutes (code analysis, cleanup suggestions)
+**Commit**: `414775d`
+
+**Notes**:
+- Human made strategic decision to simplify and prepare for new direction
+- Removed entire UI layer components to focus on core record display
+- Frame.png kept for future use but removed from active rendering
+- Clean separation of domain logic (Record/) from display components
+
+---
+
+### 2026-01-29: Infinite Grid Implementation
+
+**Phase**: Conceptualization, Analysis, Implementation, Validation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal - Requested infinite scrolling physics grid with momentum | Support |
+| Analysis           | Equal - Discussed physics simulation approach, spiral layout algorithm | Equal - Suggested class component pattern, performance optimizations |
+| Implementation     | Support | Principal - Implemented 526-line Grid.tsx with physics engine, spiral layout, event handling, TypeScript migration |
+| Validation         | Principal - Tested drag, scroll, and touch interactions, requested smoothness adjustments | Support - Provided performance tuning suggestions |
+
+**Deliverables**:
+- ✅ Momentum-based physics system (MIN_VELOCITY, FRICTION, velocity smoothing)
+- ✅ Spiral layout algorithm for infinite item generation
+- ✅ Mouse drag support with grab/grabbing cursor states
+- ✅ Touch event handling (touchstart, touchmove, touchend)
+- ✅ Wheel scroll with passive event prevention
+- ✅ Throttled/debounced updates (UPDATE_INTERVAL, VELOCITY_HISTORY_SIZE)
+- ✅ Complete TypeScript migration (.jsx → .tsx)
+- ✅ Custom debounce/throttle implementations
+- ✅ Container-absolute positioning with transforms
+- ✅ Will-change optimization for performance
+
+**Tools Used**: React 18.3, TypeScript, Performance API, requestAnimationFrame
+**Human Time**: ~20 minutes (requirements, testing, interaction feedback)
+**AI Time**: ~45 minutes (physics implementation, algorithm development, TypeScript types)
+**Commit**: `4fc57a3`
+
+**Notes**:
+- AI created sophisticated physics engine with velocity smoothing and deceleration
+- Spiral algorithm enables true infinite scrolling without bounds
+- Class component chosen for complex state management
+- Human provided feedback on interaction feel, leading to tuning adjustments
+- Non-linear deceleration at low speeds for natural stopping
+- Velocity history tracking prevents jerky movements
+
+---
+
+### 2026-01-29: Visual Styling Enhancements
+
+**Phase**: Implementation, Validation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal | Support |
+| Analysis           | Principal | Support |
+| Implementation     | Principal - Adjusted grid spacing, hover effects, cursor states | Support |
+| Validation         | Principal - Verified dark theme, interaction smoothness | Support |
+
+**Deliverables**:
+- ✅ Dark theme refinements (background-color: black)
+- ✅ Grid item spacing adjustments
+- ✅ Hover effect tuning (brightness transitions)
+- ✅ Cursor state management (grab/grabbing)
+- ✅ Smooth transition timing optimizations
+
+**Tools Used**: CSS transitions, custom properties
+**Human Time**: ~15 minutes (styling decisions, visual testing)
+**AI Time**: ~5 minutes (CSS tweaks)
+**Commit**: `e6b9409`
+
+**Notes**:
+- Minor styling commit focusing on interaction polish
+- Dark theme fully established
+- Transitions set to 0.2s for responsive feel
+
+---
+
+### 2026-01-31: Brand Integration & Service Preparation
+
+**Phase**: Conceptualization, Implementation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal - Added danicolms branding, planned streaming service integration | Support |
+| Analysis           | Principal | Support - Suggested data structure for services |
+| Implementation     | Principal - Added logo asset, integrated 5 streaming service icons, updated data structure | Support - Provided type definitions |
+| Validation         | Principal - Verified icon loading, tested data structure | Support |
+
+**Deliverables**:
+- ✅ Danicolms logo (logo.jpeg - 63KB)
+- ✅ 5 streaming service icons imported (Spotify, YouTube, Apple, Deezer, Amazon)
+- ✅ Updated Record interface with Service[] array
+- ✅ Removed old logo.png and frame.png
+- ✅ Service icon assets in public/services/
+- ✅ TypeScript type for Service (name: AllowedServices, url: string)
+
+**Tools Used**: PNG assets, TypeScript interfaces
+**Human Time**: ~30 minutes (logo design, service icon sourcing, data structure design)
+**AI Time**: ~10 minutes (type definitions, asset imports)
+**Commit**: `ee638c5`
+
+**Notes**:
+- Human prepared all visual assets for streaming services
+- Danicolms branding replaces COLME logo
+- Data structure now supports multiple streaming platforms per album
+- Removed unused visual assets (frame.png, old logo)
+- Foundation laid for service icon display system
+
+---
+
+### 2026-01-31: Service Icon Display System
+
+**Phase**: Analysis, Implementation, Validation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal | Support |
+| Analysis           | Principal - Requested conditional rendering based on record data | Equal - Discussed import strategies, conditional approaches |
+| Implementation     | Support | Principal - Implemented service icon imports, renderServiceIcons function, conditional rendering, clickable links |
+| Validation         | Principal - Tested service display, verified links work | Support |
+
+**Deliverables**:
+- ✅ All 5 service logos imported (spotifyLogo, youtubeLogo, appleLogo, deezerLogo, amazonLogo)
+- ✅ getServiceIcon() function with switch statement for conditional icon mapping
+- ✅ renderServiceIcons() component for conditional rendering
+- ✅ Clickable service links (href, target="_blank", rel="noopener noreferrer")
+- ✅ 7 albums added to records.db.json with service data
+- ✅ Enhanced artwork quality (converted several artworks to PNG, increased resolution)
+- ✅ Sample service link added to "Building Blocks" album
+
+**Tools Used**: React conditional rendering, switch statements, external links
+**Human Time**: ~25 minutes (data entry, artwork conversion, testing links)
+**AI Time**: ~20 minutes (rendering logic, conditional imports, link integration)
+**Commit**: `fab9e34`, `3bfc7fc`
+
+**Notes**:
+- AI designed getServiceIcon() for clean conditional rendering
+- Icons only render when record has corresponding service data
+- Human manually added 7 albums with metadata
+- Artwork quality improved with PNG conversion for several items
+- External links properly secured with noopener noreferrer
+- First working example: Building Blocks → Spotify link
+
+---
+
+### 2026-01-31: Gap & Backdrop System
+
+**Phase**: Conceptualization, Analysis, Implementation, Validation
+
+| Role | Human Contribution | AI Contribution |
+|------|-------------------|------------------|
+| Conceptualization  | Principal - Specified requirements: gap between items, cursor pointer, logo at bottom center, hover brightness filter, service icons on top, backdrop for visibility | Support |
+| Analysis           | Principal - Clarified two-layer structure approach (wrapper + inner) for creating gap through CSS | Equal - Suggested CSS margin vs padding approaches, discussed backdrop covering entire item |
+| Implementation     | Support | Principal - Implemented two-layer structure (grid-item-wrapper + grid-item), full backdrop overlay, conditional service rendering, icon brightness adjustments, cursor pointer |
+| Validation         | Principal - Iteratively tested visibility issues, provided feedback on icon positioning, requested backdrop to cover entire record not just icons, confirmed proper gap | Support - Iterated on CSS fixes multiple times based on feedback |
+
+**Deliverables**:
+- ✅ Two-layer component structure (`.grid-item-wrapper` outer + `.grid-item` inner)
+- ✅ Visual gap between grid items via wrapper margin (10px)
+- ✅ Cursor pointer on hoverable items
+- ✅ Logo positioned at bottom center with backdrop blur
+- ✅ Hover brightness filter (0.2) on artwork only (not icons)
+- ✅ Full backdrop overlay covering entire record on hover
+- ✅ Backdrop with rgba(0, 0, 0, 0.7) and backdrop-filter blur(10px)
+- ✅ Service icons centered on record with proper positioning
+- ✅ Service icons only appear on hover (opacity transition)
+- ✅ Icons brightened (filter: brightness(1.2)) to be visible against backdrop
+- ✅ No border radius on any elements
+- ✅ Icon hover scale effect (1.1x)
+- ✅ Gap size configurable via CSS variables
+
+**Tools Used**: CSS transitions, opacity animations, filter effects, z-index layering
+**Human Time**: ~30 minutes (requirements definition, feedback iterations, visual testing)
+**AI Time**: ~25 minutes (CSS architecture, overlay positioning, brightness adjustments)
+**Commit**: Today's work (pending)
+
+**Notes**:
+- Multiple iterations based on feedback about icon visibility
+- Backdrop originally only behind icons, expanded to cover entire item
+- Gap created through wrapper margin rather than Grid.tsx changes
+- Logo moved from top-right to bottom-center with backdrop
+- Service icons now properly visible with increased brightness
+- Icon positioning centered with transform translate(-50%, -50%)
+- Human provided specific feedback: "No, I want the backdrop to occupy the whole record. Not only behind the icons"
+- Final iteration achieved proper visibility and positioning
+
+---
+
 ## Statistics
 
 ### By Phase
 
 | Phase | Human % | AI % | Dominant |
 |-------|---------|------|----------|
-| Conceptualization | 70% | 30% | Human |
-| Analysis | 55% | 45% | Human |
-| Implementation | 25% | 75% | AI |
+| Conceptualization | 80% | 20% | Human |
+| Analysis | 60% | 40% | Human |
+| Implementation | 30% | 70% | AI |
 | Validation | 70% | 30% | Human |
 
 ### By Feature Type
 
 | Feature Type | Count | Human % | AI % |
 |--------------|-------|---------|------|
-| Frontend Components | 1 | 40% | 60% |
-| Styling | 1 | 30% | 70% |
-| Infrastructure | 1 | 60% | 40% |
+| Frontend Components | 4 | 45% | 55% |
+| Styling | 3 | 50% | 50% |
+| Infrastructure | 2 | 40% | 60% |
+| Architecture | 1 | 75% | 25% |
 
 ### Time Distribution
 
 | Category | Total Hours | % of Total |
 |----------|-------------|------------|
-| Human Time | 0.75 hrs | 70% |
-| AI Time | 0.5 hrs | 30% |
-| **Total** | **1.25 hrs** | **100%** |
+| Human Time | 3.75 hrs | 60% |
+| AI Time | 2.5 hrs | 40% |
+| **Total** | **6.25 hrs** | **100%** |
 
 ---
 
