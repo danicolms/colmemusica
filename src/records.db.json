@@ -131,6 +131,13 @@
     "services": [],
     "artwork": "/artworks/disfuncional.jpg"
   },
+    {
+    "id": "dk:unknown:0",
+    "name": "QLQ",
+    "releaseYear": 2023,
+    "services": [],
+    "artwork": "/artworks/qlq.jpg"
+  },
   {
     "id": "dk:821470126270",
     "name": "Mambrú",
