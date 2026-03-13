@@ -111,7 +111,6 @@
     ],
     "artwork": "/artworks/basado-en-una-historia-ficticia.jpg"
   },
-
   {
     "id": "amuse:unknown:0",
     "name": "Building Blocks",
@@ -128,21 +127,64 @@
     "id": "dk:821470362180",
     "name": "Disfuncional",
     "releaseYear": 2017,
-    "services": [],
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/7p3dr8oa0sk5N2Dbn5oAGa"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/disfuncional/1882174944"
+      }
+    ],
     "artwork": "/artworks/disfuncional.jpg"
   },
-    {
-    "id": "dk:unknown:0",
+  {
+    "id": "dk:821201901756",
     "name": "QLQ",
     "releaseYear": 2023,
-    "services": [],
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/0uDDmy7ewozlotDxtSoO5T"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/qlq/1882394597"
+      }
+    ],
     "artwork": "/artworks/qlq.jpg"
   },
   {
     "id": "dk:821470126270",
     "name": "Mambrú",
     "releaseYear": 2016,
-    "services": [],
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/7MAPrg93v6jcdp6NtSN5YB"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/mambrú/1874162376"
+      }
+    ],
     "artwork": "/artworks/mambru.jpg"
+  },
+  {
+    "id": "dk:825204257711",
+    "name": "La ciudad",
+    "releaseYear": 2016,
+    "services": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/album/48wEYnQEQxmrw5Bh8Kg8il"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/us/album/la-ciudad/1883432016"
+      }
+    ],
+    "artwork": "/artworks/la-ciudad.jpg"
   }
 ]
