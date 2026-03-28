@@ -179,6 +179,14 @@
     ],
     "artwork": "/artworks/fuenteovejuna.jpg"
   },
+    {
+    "id": "dk:unknown:1",
+    "name": "Fugaces",
+    "releaseYear": 2026,
+    "services": [
+    ],
+    "artwork": "/artworks/fugaces.jpg"
+  },
   {
     "id": "dk:825204257711",
     "name": "La ciudad",
